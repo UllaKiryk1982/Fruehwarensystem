@@ -24,8 +24,7 @@ jobs:
 
     - name: Build EXE
       run: |
-        pyinstaller --onefile --windowed Aplikacja_WK35_Raport_Fruehwarnsystem_ver1.py
-
+      pyinstaller --onefile --windowed Aplikacja_WK35_Raport_Fruehwarnsystem_ver1_1.py
     - name: Upload EXE
       uses: actions/upload-artifact@v4
       with:
