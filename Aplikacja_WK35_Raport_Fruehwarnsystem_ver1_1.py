@@ -30,7 +30,7 @@ warnings.simplefilter("ignore")
 
 root= tk.Tk()
 root.geometry("1500x200")
-root.title('RA Fruewarnsystem Werk 35                      Version 1.1\n                  @Autor Urszula Kiryk-Kania' )  #- @Autor Urszula Kiryk-Kania (PWL-1/4)'
+root.title('RA Fruewarnsystem Werk 69                      Version 1.1\n                  @Autor Urszula Kiryk-Kania' )  #- @Autor Urszula Kiryk-Kania (PWL-1/4)'
 
 root.update()
 
@@ -123,7 +123,7 @@ def UploadAction3():
     val3.set(filename3)
     data3 = pd.read_excel(filename3)
     df5 =pd.DataFrame(data3)
-    df5 = df5[df5['Werk Akt.'] == 35] 
+    df5 = df5[df5['Werk Akt.'] == 69] 
     df5=df5.rename(columns={'Sachnummer Akt.':'SG-TNR'})
     str(df5['SG-TNR'])
     df5['SG-TNR']=df5['SG-TNR'].str.replace(' ', '')
@@ -438,17 +438,17 @@ def start():
 
 # ===== create labels ======
 
-Plik1 = tk.Label(root, text='Werk 35 -Pobierz plik Anzeige der ankommenden SG-Versionen: ')
+Plik1 = tk.Label(root, text='Werk 69 -Pobierz plik Anzeige der ankommenden SG-Versionen: ')
 Plik1.grid(row=1, column=0, sticky=tk.W, padx=(10, 5))
 
-Plik2 = tk.Label(root, text='Werk 35 -plik Steuergeräteversionsliste: ')
+Plik2 = tk.Label(root, text='Werk 69 -plik Steuergeräteversionsliste: ')
 Plik2.grid(row=2, column=0, sticky=tk.W, padx=(10, 5))
 
 
-Plik3 = tk.Label(root, text='Werk 35 -Załaduj plik z DISPO: ')
+Plik3 = tk.Label(root, text='Werk 69 -Załaduj plik z DISPO: ')
 Plik3.grid(row=3, column=0, sticky=tk.W, padx=(10, 5))
 
-Plik4 = tk.Label(root, text='Werk 35 -Pobierz ZSB mapping: ')
+Plik4 = tk.Label(root, text='Werk 69 -Pobierz ZSB mapping: ')
 Plik4.grid(row=4, column=0, sticky=tk.W, padx=(10, 5))
 
 
