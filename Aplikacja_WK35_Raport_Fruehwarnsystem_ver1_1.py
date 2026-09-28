@@ -119,7 +119,7 @@ def UploadAction3():
     global df5
 #     filename3 = "X:/Groups/PWL/PWL1/PWL14/08_Systemowe/8_bazy danych/Stale_dane/Stałe dane wszystkie.xlsx"
     onedrive = os.environ.get("OneDriveCommercial") or os.environ.get("OneDrive")
-    filename3 = Path(onedrive) / "08_Systemowe" / "8_bazy danych" / "Stale_dane" / "Stałe dane wszystkie.xlsx"
+    filename3 = Path(onedrive) / "Raporty Logistyki - PartsAnalysysVSL" / "Stałe dane wszystkie.xlsx"
     val3.set(filename3)
     data3 = pd.read_excel(filename3)
     df5 =pd.DataFrame(data3)
