@@ -124,7 +124,7 @@ def UploadAction3():
     val.set(filename3)
     data3 = pd.read_excel(filename3)
     df5 =pd.DataFrame(data3)
-    df5 = df5[df5['Werk Akt.'] == 35] 
+    df5 = df5[df5['Werk Akt.'] == 69] 
     df5=df5.rename(columns={'Sachnummer Akt.':'SG-TNR'})
     str(df5['SG-TNR'])
     df5['SG-TNR']=df5['SG-TNR'].str.replace(' ', '')
@@ -400,7 +400,7 @@ def start():
     
     
     DZISIAJ = time.strftime('%Y-%m-%d__%H_%M_%S')
-    with pd.ExcelWriter('Raport_Fruehwarnsystem_WK35_'+DZISIAJ+'.xlsx') as writer:
+    with pd.ExcelWriter('Raport_Fruehwarnsystem_WK69_'+DZISIAJ+'.xlsx') as writer:
         mapping.to_excel(writer, sheet_name = "Raport", index=False)# header=None)        # , header=None)
         workbook = writer.book
         worksheet = writer.sheets['Raport']
@@ -439,17 +439,17 @@ def start():
 
 # ===== create labels ======
 
-Plik1 = tk.Label(root, text='Werk 35 -Pobierz plik Anzeige der ankommenden SG-Versionen: ')
+Plik1 = tk.Label(root, text='Werk 69 -Pobierz plik Anzeige der ankommenden SG-Versionen: ')
 Plik1.grid(row=1, column=0, sticky=tk.W, padx=(10, 5))
 
-Plik2 = tk.Label(root, text='Werk 35 -plik Steuergeräteversionsliste: ')
+Plik2 = tk.Label(root, text='Werk 69 -plik Steuergeräteversionsliste: ')
 Plik2.grid(row=2, column=0, sticky=tk.W, padx=(10, 5))
 
 
-Plik3 = tk.Label(root, text='Werk 35 - plik z DISPO: ')
+Plik3 = tk.Label(root, text='Werk 69 - plik z DISPO: ')
 Plik3.grid(row=3, column=0, sticky=tk.W, padx=(10, 5))
 
-Plik4 = tk.Label(root, text='Werk 35 -Pobierz ZSB mapping: ')
+Plik4 = tk.Label(root, text='Werk 69 -Pobierz ZSB mapping: ')
 Plik4.grid(row=4, column=0, sticky=tk.W, padx=(10, 5))
 
 
