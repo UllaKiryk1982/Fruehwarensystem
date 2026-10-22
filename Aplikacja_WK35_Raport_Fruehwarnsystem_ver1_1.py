@@ -48,7 +48,7 @@ val3_entry_box = tk.Entry(root, width=145, textvariable=val3)
 val3_entry_box.grid(row=3, column=1)
 
 val4 = tk.StringVar()
-val4_entry_box = tk.Entry(root, width=145, textvariable=val)
+val4_entry_box = tk.Entry(root, width=145, textvariable=val4)
 val4_entry_box.grid(row=4, column=1)
 
 
@@ -121,7 +121,7 @@ def UploadAction3():
     # onedrive = os.environ.get("OneDriveCommercial") or os.environ.get("OneDrive")
     # filename3 = Path(onedrive) / "Raporty Logistyki - PartsAnalysysVSL" / "Stałe dane wszystkie.xlsx"
     filename3 = askopenfilename()
-    val.set(filename3)
+    val3.set(filename3)
     data3 = pd.read_excel(filename3)
     df5 =pd.DataFrame(data3)
     df5 = df5[df5['Werk Akt.'] == 69] 
